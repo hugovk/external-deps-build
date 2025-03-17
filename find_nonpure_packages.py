@@ -40,7 +40,7 @@ def is_pure(package_name):
         return True
 
 
-with open('top-pypi-packages-30-days.json') as f:
+with open('top-pypi-packages.json') as f:
     data_top100 = json.load(f)['rows'][:150]
     pkgnames = [row['project'] for row in data_top100]
 
